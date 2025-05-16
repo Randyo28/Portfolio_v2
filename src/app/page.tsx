@@ -4,42 +4,42 @@ const portfolioProjects = [
   {
     id: 1,
     title: "Xanders Barbershop",
-    img: "/next.svg",
+    img: "/Xander's Barber.png",
     link: "https://xandersbarbershop.netlify.app/",
     description: "Created using Html, Css, Js, Gsap"
   },
   {
     id: 2,
     title: "Punk-Beer",
-    img: "/vercel.svg",
+    img: "/punk-beer.png",
     link: "https://punk-beer-one.vercel.app/",
     description: "Created using React, Punk API, Vercel"
   },
   {
     id: 3,
     title: "Rick and Morty Website",
-    img: "/globe.svg",
+    img: "/Rick&Morty.png",
     link: "https://rick-morty-randyo28.vercel.app/",
     description: "Created using React, Rick and Morty API, Vercel"
   },
   {
     id: 4,
     title: "Analytic Solutions",
-    img: "/next.svg",
+    img: "/Analytic-Solutions.png",
     link: "https://analytic-solutions.netlify.app/",
     description: "Created using Html, Css, Js, Netlify"
   },
   {
     id: 5,
     title: "Secret Family Recipe",
-    img: "/vercel.svg",
+    img: "/secret-family-recipe.png",
     link: "https://secret-family-recipe-nu.vercel.app/",
     description: "Created using React, Vercel"
   },
   {
     id: 6,
     title: "Spacestagram",
-    img: "/globe.svg",
+    img: "/Spacestagram.png",
     link: "https://spacestagram-spfy.vercel.app/",
     description: "Created using React, NASA API, Vercel"
   },
@@ -47,9 +47,9 @@ const portfolioProjects = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
+    <div className="min-h-screen bg-[#181818] text-[#f5f5f5] font-sans">
       {/* Navigation */}
-      <nav className="w-full fixed top-0 left-0 bg-white/80 dark:bg-black/80 backdrop-blur z-10 shadow-sm">
+      <nav className="w-full fixed top-0 left-0 bg-[#232323] backdrop-blur z-10 shadow-sm">
         <ul className="flex justify-center gap-8 py-4 text-lg font-semibold">
           <li><a href="#about" className="hover:text-blue-600 transition">About</a></li>
           <li><a href="#resume" className="hover:text-blue-600 transition">Resume</a></li>
@@ -119,8 +119,45 @@ export default function Home() {
         {/* Resume Section */}
         <section id="resume" className="w-full scroll-mt-24">
           <h2 className="text-3xl font-semibold mb-4 text-center">Resume</h2>
-          <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 text-gray-700 dark:text-gray-200 text-center">
-            <p>My professional experience, education, and skills will be listed here soon.</p>
+          <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Education */}
+              <div>
+                <h4 className="text-xl font-semibold mb-4 text-blue-400">Education</h4>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-blue-600 pl-4">
+                    <h5 className="font-bold text-lg">Associates Degree</h5>
+                    <span className="text-gray-400 text-sm block mb-1">KingsBorough Community College / 2013 - 2015</span>
+                  </div>
+                  <div className="border-l-4 border-blue-600 pl-4">
+                    <h5 className="font-bold text-lg">Bachelor Degree</h5>
+                    <span className="text-gray-400 text-sm block mb-1">John Jay College / 2016 - 2018</span>
+                  </div>
+                  <div className="border-l-4 border-blue-600 pl-4">
+                    <h5 className="font-bold text-lg">CodingPhase</h5>
+                    <span className="text-gray-400 text-sm block mb-1">BloomTech (Lambda School) / 2021 - 2021</span>
+                  </div>
+                </div>
+              </div>
+              {/* Experience */}
+              <div>
+                <h4 className="text-xl font-semibold mb-4 text-blue-400">Experience</h4>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-blue-600 pl-4">
+                    <h5 className="font-bold text-lg">Xander's Barbershop</h5>
+                    <span className="text-gray-400 text-sm block mb-1">Website for family barbershop using Html, Css, JS</span>
+                  </div>
+                  <div className="border-l-4 border-blue-600 pl-4">
+                    <h5 className="font-bold text-lg">Security Officer</h5>
+                    <span className="text-gray-400 text-sm block mb-1">PowerPoint / 2017 - 2020</span>
+                  </div>
+                  <div className="border-l-4 border-blue-600 pl-4">
+                    <h5 className="font-bold text-lg">biBerk - Software Engineer</h5>
+                    <span className="text-gray-400 text-sm block mb-1">2021 - Present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -134,20 +171,20 @@ export default function Home() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg transition overflow-hidden border border-gray-200 dark:border-gray-700"
+                className="block bg-gray-900 rounded-lg shadow hover:shadow-lg transition overflow-hidden border border-gray-800 group text-gray-100"
               >
                 <Image
                   src={project.img}
                   alt={project.title}
                   width={400}
                   height={200}
-                  className="w-full h-48 object-contain bg-gray-50 dark:bg-gray-800"
+                  className="w-full h-48 object-contain bg-gray-800"
                 />
                 <div className="p-4 text-center">
-                  <h6 className="font-medium text-lg mb-1">{project.title}</h6>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline text-sm block mb-1">View Website Here</a>
+                  <h6 className="font-medium text-lg mb-1 group-hover:text-blue-400 transition-colors">{project.title}</h6>
+                  <p className="text-blue-400 text-sm mb-1">View Website →</p>
                   {project.description && (
-                    <p className="text-gray-500 dark:text-gray-400 text-xs mt-1">{project.description}</p>
+                    <p className="text-gray-400 text-xs mt-1">{project.description}</p>
                   )}
                 </div>
               </a>
