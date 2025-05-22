@@ -78,9 +78,9 @@ export default function Home() {
                 <h1 className="text-4xl font-extrabold mb-2">About Me</h1>
                 <div className="w-16 h-1 bg-blue-600 rounded mb-4 mx-auto md:mx-0"></div>
                 <h2 className="text-blue-500 text-lg font-semibold mb-2">Who am I?</h2>
-                <h3 className="text-2xl font-bold mb-2">I'm Randy Ortiz, Web Developer</h3>
+                <h3 className="text-2xl font-bold mb-2">I&apos;m Randy Ortiz, Web Developer</h3>
                 <p className="text-gray-300 mb-4">
-                  I'm a Software Engineer with over 4 years of professional experience, specializing in building impactful and scalable software solutions. My passion lies in leveraging technology to solve real-world problems and deliver value to users. I thrive in collaborative environments and am always eager to learn and adopt new technologies. Outside of work, I enjoy expanding my skill set, taking long walks with my dogs, and exploring new places I've never been to.
+                  I&apos;m a Software Engineer with over 4 years of professional experience, specializing in building impactful and scalable software solutions. My passion lies in leveraging technology to solve real-world problems and deliver value to users. I thrive in collaborative environments and am always eager to learn and adopt new technologies. Outside of work, I enjoy expanding my skill set, taking long walks with my dogs, and exploring new places I&apos;ve never been to.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-400 text-sm mb-4">
                   <div><span className="font-semibold text-gray-200">Name:</span> Randy Ortiz</div>
@@ -144,7 +144,7 @@ export default function Home() {
                 <h4 className="text-xl font-semibold mb-4 text-blue-400">Experience</h4>
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-600 pl-4">
-                    <h5 className="font-bold text-lg">Xander's Barbershop</h5>
+                    <h5 className="font-bold text-lg">Xander&apos;s Barbershop</h5>
                     <span className="text-gray-400 text-sm block mb-1">Website for family barbershop using Html, Css, JS</span>
                   </div>
                   <div className="border-l-4 border-blue-600 pl-4">
